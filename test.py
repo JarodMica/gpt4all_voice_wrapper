@@ -39,6 +39,6 @@ while True:
         continue
     print(user_input + "\n")
     model = Model(ggml_model='./models/gpt4all-converted.bin', n_ctx=512)
-    generated_text = model.generate(user_input, n_predict=258)
+    generated_text = model.generate(user_input, n_predict=128)
     print(generated_text)
     generate_voice(generated_text)
